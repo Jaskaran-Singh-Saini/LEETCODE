@@ -18,7 +18,7 @@ class Solution:
         if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 0:
             return 0
 
-        grid[i][j] = 0   # mark visited
+        grid[i][j] = 0 
         area = 1
 
         area += self.dfs(grid, i + 1, j)
