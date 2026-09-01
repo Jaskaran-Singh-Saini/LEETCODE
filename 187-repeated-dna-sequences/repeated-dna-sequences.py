@@ -6,6 +6,7 @@ class Solution:
             cur  = s[i: i+10]
             if cur in temp:
                 res.add(cur)
-            temp.add(cur)
+            else:
+                temp.add(cur)
         
         return list(res)
